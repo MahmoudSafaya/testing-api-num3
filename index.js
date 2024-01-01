@@ -7,7 +7,7 @@ const fs = require('fs');
 const cors = require('cors');
 app.use(cors()); // Prevents CORS error
 
-app.get('/', function(req, res) {
+app.get('/api', function(req, res) {
 
     if (req.url === '/favicon.ico') {
         res.end();
